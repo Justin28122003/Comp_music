@@ -28,6 +28,7 @@ On the right the chordogram of Fool's Gold shows certain chords being played. Th
 ## Column {width="40%"}
 
 There are two tempograms made of the same song. In the first graph of the autocorrelation it can be seen that there is a tempo of 150 BPM. Mostly shown at t=50 and t = 160. in the rest of the song there isn't a clear line. The Fourier based tempogram doesn't show a clear line. It has some brighter spots at t=50 around the 120 BPM. 
+
 ## Column {width="60%"}
 
 ![](Screenshots/tempogram_fools_gold_act.png){width=100%}

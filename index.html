@@ -69,7 +69,7 @@ ul.task-list li input[type="checkbox"] {
         <div class="navbar-author">Justin van Egmond</div>
       </div>
     </div>
-<div id="dashboard-collapse" class="navbar-collapse collapse"><ul class="navbar-nav navbar-nav-scroll me-auto" role="tablist"><li class="nav-item" role="presentation"><a id="tab-chordogram" class="nav-link active" data-bs-toggle="tab" role="tab" data-bs-target="#chordogram" data-scrolling="false" href="#chordogram" aria-controls="chordogram" aria-selected="true"><span class="nav-link-text">Chordogram</span></a></li><li class="nav-item" role="presentation"><a id="tab-tempogram" class="nav-link" data-bs-toggle="tab" role="tab" data-bs-target="#tempogram" data-scrolling="false" href="#tempogram" aria-controls="tempogram" aria-selected="false"><span class="nav-link-text">Tempogram</span></a></li></ul></div></div>
+<div id="dashboard-collapse" class="navbar-collapse collapse"><ul class="navbar-nav navbar-nav-scroll me-auto" role="tablist"><li class="nav-item" role="presentation"><a id="tab-chordogram" class="nav-link active" data-bs-toggle="tab" role="tab" data-bs-target="#chordogram" data-scrolling="false" href="#chordogram" aria-controls="chordogram" aria-selected="true"><span class="nav-link-text">Chordogram</span></a></li><li class="nav-item" role="presentation"><a id="tab-tempogram" class="nav-link" data-bs-toggle="tab" role="tab" data-bs-target="#tempogram" data-scrolling="false" href="#tempogram" aria-controls="tempogram" aria-selected="false"><span class="nav-link-text">Tempogram</span></a></li><li class="nav-item" role="presentation"><a id="tab-clustering" class="nav-link" data-bs-toggle="tab" role="tab" data-bs-target="#clustering" data-scrolling="false" href="#clustering" aria-controls="clustering" aria-selected="false"><span class="nav-link-text">Clustering</span></a></li></ul></div></div>
 </nav>
 </header>
 <div class="page-layout-custom quarto-dashboard-content bslib-gap-spacing html-fill-container bslib-page-fill quarto-dashboard-pages">  
@@ -141,6 +141,36 @@ grid-auto-rows: minmax(0, 1fr);">
 <div class="card-body html-fill-item html-fill-container">
 <img src="Screenshots/tempogram_fools_gold_act.png" class="img-fluid" style="width:100.0%">
 <img src="Screenshots/tempogram_fools_gold_dft.png" class="img-fluid" style="width:100.0%">
+</div>
+<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
+    <template>Expand</template>
+    <span class="bslib-full-screen-enter badge rounded-pill">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
+    </span>
+</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
+</div>
+</div>
+</div><div id="clustering" class="dashboard-page tab-pane grid-skip html-fill-item html-fill-container" data-orientation="columns" aria-labelledby="tab-clustering">
+<div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 40fr) minmax(3em, 60fr);
+grid-auto-rows: minmax(0, 1fr);">
+<div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-rows: minmax(3em, max-content); grid-auto-columns: minmax(0, 1fr);">
+<div class="card html-fill-item html-fill-container bslib-card" data-fill="false" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card-body html-fill-item html-fill-container">
+<p>The ranking graph shows a clear overlap in Loudness, Energy and Acousticness. So those three components have been chosen for the comparison. In the heat map most artists models are working pretty accurately except for Harry Styles. Some adjustments have been tried to improve, like more clustering, but it did not change much.</p>
+<p>In the third graph it is visible that ZAYN has the lowest Loudnes and Energy and a high Acousticness. Harry styles and Louis Tomlinson seem to be close to the style of One Direction. High in Energy and the songs that are low in Energy also are higher in Acousticness.</p>
+</div>
+<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
+    <template>Expand</template>
+    <span class="bslib-full-screen-enter badge rounded-pill">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
+    </span>
+</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
+</div><div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-rows: minmax(3em, max-content); grid-auto-columns: minmax(0, 1fr);">
+<div class="card html-fill-item html-fill-container bslib-card" data-fill="false" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card-body html-fill-item html-fill-container">
+<img src="Screenshots/rank.png" class="img-fluid" style="width:100.0%">
+<img src="Screenshots/heatmap.png" class="img-fluid" style="width:100.0%">
+<img src="Screenshots/final_loudness.png" class="img-fluid" style="width:100.0%">
 </div>
 <bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
     <template>Expand</template>

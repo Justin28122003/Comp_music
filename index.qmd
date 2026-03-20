@@ -12,9 +12,11 @@ format:
 ## Column {width="40%"}
 
 ### Row {height="20%"}
+
 This page will explain the chordogram of the song: Fool's Gold covered by Niall Hooran.
 
 ### Row {height="80%"}
+
 On the right the chordogram of Fool's Gold shows certain chords being played. The lightest colors tell the most the chord being played to be most likely. In this case G:maj, E:min, C:maj, A:min, F:maj are most frequent. Not only are they the brightest at around t=70s but they are bright overall. The horizontal line is clearly visible. Take G#:min and E:maj for example. They are bright at t=70s but not really active in the rest of the song. That could be because of a temporary key changre or just simply noise / singing voices hitting that chord.
 
 ## Column {width="60%"}
@@ -34,3 +36,21 @@ There are two tempograms made of the same song. In the first graph of the autoco
 ![](Screenshots/tempogram_fools_gold_act.png){width=100%}
 
 ![](Screenshots/tempogram_fools_gold_dft.png){width=100%}
+
+
+# Clustering
+
+## Column {width="40%"}
+
+The ranking graph shows a clear overlap in Loudness, Energy and Acousticness. So those three components have been chosen for the comparison. In the heat map most artists models are working pretty accurately except for Harry Styles. Some adjustments have been tried to improve, like more clustering, but it did not change much. 
+
+In the third graph it is visible that ZAYN has the lowest Loudnes and Energy and a high Acousticness. Harry styles and Louis Tomlinson seem to be close to the style of One Direction. High in Energy and the songs that are low in Energy also are higher in Acousticness. 
+ 
+
+## Column {width="60%"}
+
+![](Screenshots/rank.png){width=100%}
+
+![](Screenshots/heatmap.png){width=100%}
+
+![](Screenshots/final_loudness.png){width=100%}
